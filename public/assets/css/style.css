@@ -1,0 +1,182 @@
+body {
+    font-family: 'Outfit', sans-serif;
+}
+
+/* Heroセクションの文字調整 */
+.hero-netflix h1 {
+    font-weight: 500;
+    font-size: 2.8rem;
+    letter-spacing: 0.5px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+
+.hero-netflix p.lead {
+    font-weight: 300;
+    font-size: 1.2rem;
+    color: #f1f1f1;
+    opacity: 0.9;
+}
+
+.hero-netflix {
+    background: url('/assets/images/Library.jpg') no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-netflix .overlay {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(3px);
+    z-index: 1;
+}
+
+.hero-netflix .content {
+    position: relative;
+    z-index: 2;
+    color: white;
+}
+
+.search-form input {
+    max-width: 250px;
+    padding: 8px 12px;
+    font-size: 1rem;
+    border-radius: 8px;
+}
+
+.search-form button {
+    padding: 10px 24px;
+    font-size: 1rem;
+    border-radius: 8px;
+    font-weight: 500;
+}
+
+.search-form button:hover {
+    background: #f1f1f1;
+}
+
+.search-form input:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.25rem rgba(255, 193, 7, 0.4);
+}
+
+/* 🧠 All Books のおしゃれな見出し */
+.all-books-heading {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.2rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #333;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #ffc107;
+    position: relative;
+}
+
+/* 💫 ホバーアニメーション */
+.hover-effect {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.hover-effect:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+/* 📚 Book カード */
+.card {
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+.card-title {
+    font-weight: 600;
+}
+
+.card .btn {
+    font-weight: 500;
+}
+
+/* 検索カードに余白・影 */
+.card-body input[type="text"] {
+    border-radius: 8px;
+    padding: 10px 15px;
+}
+
+/* 横型カードの画像 */
+.card img {
+    max-height: 160px;
+    object-fit: contain;
+}
+
+
+/* ⭐ 評価マーク */
+.fa-star {
+    font-size: 14px;
+}
+
+/* 📦 ステータスバッジ */
+.badge {
+    font-size: 0.8rem;
+    padding: 0.4em 0.7em;
+    border-radius: 20px;
+}
+
+/* ❤️ お気に入り */
+.btn-outline-danger {
+    border-radius: 50%;
+    width: 34px;
+    height: 34px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer {
+    background-color: #212529; /* ダークグレー */
+    color: #fff;
+  }
+  
+  footer a {
+    color: #ccc;
+  }
+  
+  footer a:hover {
+    color: #ffc107;
+  }
+  
+
+/* 📱 レスポンシブ対応 */
+@media (max-width: 768px) {
+    .hero-netflix h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero-netflix p.lead {
+        font-size: 1rem;
+    }
+
+    .search-form {
+        flex-direction: column;
+    }
+
+    .search-form input {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .search-form button {
+        width: 100%;
+    }
+}
