@@ -1,10 +1,9 @@
 # Livni
 
 A fully functional library management system built with Laravel.  
-This project simulates a real-world administrative system where all operations are tightly integrated with backend data logic.
 
 
----
+
 
 ## Features
 
