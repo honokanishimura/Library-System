@@ -37,7 +37,9 @@ RUN chown -R www-data:www-data /var/www/html \
 RUN composer install --no-dev --optimize-autoloader \
     && cp .env.example .env \
     && php artisan key:generate \
+    && php artisan migrate --force \
     && php artisan config:cache
+
 
 # Apacheを起動
 CMD ["apache2-foreground"]
